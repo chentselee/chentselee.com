@@ -1,2 +1,8 @@
 # chentselee.com
-Source code for my portfolio site on github pages.
+My portfolio site.
+
+📚 Library used:
+- React
+- Nextjs
+🎨 Styling:
+- styled-jsx
