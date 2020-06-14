@@ -45,7 +45,7 @@
       "URL": "/assets/images/project5.png",
       "alt": "portfolio site"
     },
-    "techs": ["React", "TypeScript", "Next.js"],
+    "techs": ["React", "TypeScript", "Next.js", "styled-jsx"],
     "projectURL": "https://chentselee.netlify.app/",
     "sourceURL": "https://github.com/chentselee/chentselee.com"
   }
