@@ -46,7 +46,7 @@
       "alt": "portfolio site"
     },
     "techs": ["React", "TypeScript", "Next.js"],
-    "projectURL": "https://cryptic-ridge-70965.herokuapp.com",
-    "sourceURL": "https://github.com/chentselee/e-commerce-admin"
+    "projectURL": "https://chentselee.netlify.app/",
+    "sourceURL": "https://github.com/chentselee/chentselee.com"
   }
 ]
