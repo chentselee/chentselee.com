@@ -63,7 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <style jsx>
         {`
           .card {
-            max-width: 390px;
+            max-width: 380px;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -165,6 +165,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           .to-source {
             background-color: var(--info);
+          }
+
+          @media (min-width: 640px) {
+            .card {
+              width: calc(210px + 20%);
+            }
           }
         `}
       </style>
