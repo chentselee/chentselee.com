@@ -1,0 +1,52 @@
+[
+  {
+    "title": "仿微軟首頁",
+    "image": {
+      "URL": "/assets/images/project1.jpg",
+      "alt": "Microsoft splash clone"
+    },
+    "techs": ["React", "TypeScript", "Sass"],
+    "projectURL": "https://microsoft-splash-clone.now.sh",
+    "sourceURL": "https://github.com/chentselee/microsoft-splash-clone"
+  },
+  {
+    "title": "仿Spotify首頁",
+    "image": {
+      "URL": "/assets/images/project2.png",
+      "alt": "Spotify splash clone"
+    },
+    "techs": ["React", "Material-UI"],
+    "projectURL": "https://spotify-splash-clone.now.sh",
+    "sourceURL": "https://github.com/chentselee/spotify-splash-clone"
+  },
+  {
+    "title": "電商前端",
+    "image": {
+      "URL": "/assets/images/project3.png",
+      "alt": "e-commerce"
+    },
+    "techs": ["React", "Redux", "Bootstrap"],
+    "projectURL": "https://myshop-chentse.netlify.app",
+    "sourceURL": "https://github.com/chentselee/e-commerce"
+  },
+  {
+    "title": "電商後端",
+    "image": {
+      "URL": "/assets/images/project4.png",
+      "alt": "e-commerce admin"
+    },
+    "techs": ["JavaScript", "Bootstrap"],
+    "projectURL": "https://cryptic-ridge-70965.herokuapp.com",
+    "sourceURL": "https://github.com/chentselee/e-commerce-admin"
+  },
+  {
+    "title": "這個作品集網站",
+    "image": {
+      "URL": "/assets/images/project5.png",
+      "alt": "portfolio site"
+    },
+    "techs": ["React", "TypeScript", "Next.js"],
+    "projectURL": "https://cryptic-ridge-70965.herokuapp.com",
+    "sourceURL": "https://github.com/chentselee/e-commerce-admin"
+  }
+]
