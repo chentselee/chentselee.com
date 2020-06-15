@@ -8,7 +8,7 @@ const Logo = () => {
         <Link href="/">
           <a>李承澤</a>
         </Link>
-        <span>前端工程師</span>
+        <span>開發者</span>
       </section>
       <style jsx>
         {`
