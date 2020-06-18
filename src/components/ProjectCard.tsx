@@ -64,13 +64,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {`
           .card {
             max-width: 380px;
+            margin-bottom: 2rem;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+          }
+
+          @supports (display: grid) {
+            .card {
+              margin: 0;
+            }
+          }
+
+          @supports (display: subgrid) {
+            .card {
+              gap: 0.5rem;
+            }
           }
 
           h2 {
+            margin-bottom: 0.5rem;
             color: var(--text-gray);
+          }
+
+          @supports (display: subgrid) {
+            h2 {
+              margin-bottom: 0;
+            }
           }
 
           h2::before {
@@ -110,15 +129,36 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            gap: 1rem;
             background-color: white;
           }
 
+          @supports (display: subgrid) {
+            .detail {
+              gap: 1rem;
+            }
+          }
+
           ul {
+            margin-bottom: 1rem;
             display: flex;
+            align-content: start;
             flex-wrap: wrap;
             list-style: none;
-            gap: 4px;
+          }
+
+          ul > :not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          @supports (display: subgrid) {
+            ul {
+              margin-bottom: 0;
+              gap: 4px;
+            }
+
+            ul > :not(:last-child) {
+              margin-bottom: 0;
+            }
           }
 
           li {
@@ -140,7 +180,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             flex-direction: column;
             align-items: center;
             font-size: 0.9rem;
-            gap: 5px;
+          }
+
+          @supports (display: subgrid) {
+            nav {
+              gap: 5px;
+            }
           }
 
           nav > a {
@@ -153,6 +198,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             text-align: center;
             box-shadow: var(--shadow);
             transition: transform 300ms;
+          }
+
+          nav > :not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          @supports (display: subgrid) {
+            nav > :not(:last-child) {
+              margin-bottom: 0;
+            }
           }
 
           nav > a:hover {
@@ -170,6 +225,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           @media (min-width: 640px) {
             .card {
               width: calc(210px + 20%);
+            }
+
+            .card > :not(:last-child) {
+              margin-right: 2rem;
+            }
+
+            @supports (display: grid) {
+              .card {
+                width: 100%;
+              }
+
+              .card > :not(:last-child) {
+                margin-right: 0;
+              }
             }
           }
         `}

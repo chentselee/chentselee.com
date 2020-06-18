@@ -26,7 +26,19 @@ const Home: React.FC<{ projects: ProjectCardProps[] }> = ({ projects }) => {
           div {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
+            justify-content: center;
+          }
+
+          @supports (display: grid) {
+            div {
+              display: grid;
+              grid-template-columns: repeat(
+                auto-fill,
+                minmax(300px, max-content)
+              );
+              gap: 2rem;
+              grid-gap: 2rem;
+            }
           }
         `}
       </style>

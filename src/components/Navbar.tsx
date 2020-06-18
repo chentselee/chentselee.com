@@ -59,7 +59,20 @@ const Navbar = () => {
             list-style: none;
             display: flex;
             justify-content: space-evenly;
-            gap: 1.5rem;
+          }
+
+          ul > :not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          @supports (display: subgrid) {
+            ul {
+              gap: 1.5rem;
+            }
+
+            ul > :not(:last-child) {
+              margin-right: 0;
+            }
           }
 
           a {
@@ -90,14 +103,33 @@ const Navbar = () => {
               display: flex;
               flex-direction: column;
               justify-content: space-between;
-              gap: 2.5rem;
+              align-items: stretch;
+            }
+
+            nav > :not(:last-child) {
+              margin-bottom: 2rem;
+            }
+
+            @supports (display: subgrid) {
+              nav {
+                gap: 2.5rem;
+              }
+
+              nav > :not(:last-child) {
+                margin-bottom: 0;
+              }
             }
 
             ul {
-              flex-grow: 1;
-              justify-content: flex-start;
+              margin-top: 2rem;
               flex-direction: column;
-              gap: 2rem;
+              justify-content: flex-start;
+              flex-grow: 1;
+            }
+
+            ul > :not(:last-child) {
+              margin-right: 0;
+              margin-bottom: 1.5rem;
             }
 
             a {

@@ -30,7 +30,20 @@ const Contact = () => {
           section {
             display: flex;
             justify-content: center;
-            gap: 1.2rem;
+          }
+
+          section > :not(:last-child) {
+            margin-right: 1.2rem;
+          }
+
+          @supports (display: subgrid) {
+            section {
+              gap: 1.2rem;
+            }
+
+            section > :not(:last-child) {
+              margin-right: 0;
+            }
           }
 
           img {
@@ -52,14 +65,31 @@ const Contact = () => {
               flex-direction: column;
             }
 
+            section > :not(:last-child) {
+              margin-bottom: 1.2rem;
+            }
+
+            @supports (display: subgrid) {
+              section > :not(:last-child) {
+                margin-bottom: 0;
+              }
+            }
+
             a {
               display: flex;
               align-items: center;
-              column-gap: 1rem;
               color: white;
               text-transform: capitalize;
               text-decoration: none;
               font-family: "Source Code Pro", monospace;
+            }
+
+            a > :not(:last-child) {
+              margin-right: 1rem;
+            }
+
+            @supports (display: subgrid) {
+              column-gap: 1rem;
             }
 
             span {
