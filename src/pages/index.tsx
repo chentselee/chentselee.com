@@ -40,6 +40,12 @@ const Home: React.FC<{ projects: ProjectCardProps[] }> = ({ projects }) => {
               grid-gap: 2rem;
             }
           }
+
+          @media (min-width: 640px) {
+            div {
+              justify-content: start;
+            }
+          }
         `}
       </style>
     </>

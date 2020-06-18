@@ -125,7 +125,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           .detail {
             min-height: 180px;
-            padding: 12px;
+            padding: 6px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -165,7 +165,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             padding: 4px 12px;
             background-color: var(--primary);
             border-radius: 16px;
-            font-size: 0.6rem;
+            font-size: 10px;
             letter-spacing: 0.8px;
             color: white;
             box-shadow: var(--shadow);
@@ -179,7 +179,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 0.9rem;
           }
 
           @supports (display: subgrid) {
@@ -193,7 +192,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             padding: 5px 2px;
             border-radius: 5px;
             color: white;
-            font-size: 0.7rem;
+            font-size: 12px;
             text-decoration: none;
             text-align: center;
             box-shadow: var(--shadow);
@@ -239,6 +238,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               .card > :not(:last-child) {
                 margin-right: 0;
               }
+            }
+
+            .detail {
+              padding: 12px;
             }
           }
         `}
