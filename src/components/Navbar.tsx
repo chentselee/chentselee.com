@@ -14,8 +14,12 @@ const links: link[] = [
     href: "/",
   },
   {
-    name: "關於",
+    name: "關於我",
     href: "/about",
+  },
+  {
+    name: "履歷",
+    href: "/resume",
   },
 ];
 
