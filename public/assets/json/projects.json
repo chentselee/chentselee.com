@@ -5,7 +5,7 @@
       "URL": "/assets/images/project1.jpg",
       "alt": "Microsoft splash clone"
     },
-    "techs": ["React", "TypeScript", "Sass"],
+    "techs": ["React", "TypeScript", "Scss"],
     "projectURL": "https://microsoft-splash-clone.now.sh",
     "sourceURL": "https://github.com/chentselee/microsoft-splash-clone"
   },
