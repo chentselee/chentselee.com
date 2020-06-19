@@ -8,7 +8,7 @@ export default function portfolio() {
         <Page title="關於我">
           <article>
             <h2>李承澤</h2>
-            <img src="/assets/images/selfie.jpg" alt="my selfie" width="100" />
+            <img src="/assets/images/selfie.jpg" alt="my selfie" />
             <section>
               一個對寫程式、新科技有興趣，沉穩、內斂、好奇心強，能夠不斷獨立學習的開發者。對我來說，能夠使產品不斷改進和創新，提供更好的體驗、價值，並寫出更完善的程式是一件很有成就感的事情。自學網頁前端半年。
             </section>
@@ -76,6 +76,7 @@ export default function portfolio() {
         }
 
         img {
+          max-width: 75px;
           float: right;
           margin: 0.5rem;
           border-radius: 3px;
