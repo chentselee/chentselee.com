@@ -7,13 +7,13 @@ export interface ProjectCardProps {
     alt: string;
   };
   techs: string[];
-  projectURL: string;
-  sourceURL: string;
+  projectURL?: string;
+  sourceURL?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
-  image,
+  image = { URL: "/assets/images/default.jpg", alt: "code" },
   techs,
   projectURL,
   sourceURL,
@@ -40,22 +40,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               ))}
             </ul>
             <nav>
-              <a
-                className="to-project"
-                href={projectURL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                前往作品
-              </a>
-              <a
-                className="to-source"
-                href={sourceURL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                原始碼
-              </a>
+              {projectURL ? (
+                <a
+                  className="to-project"
+                  href={projectURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  前往作品
+                </a>
+              ) : (
+                ""
+              )}
+              {sourceURL ? (
+                <a
+                  className="to-source"
+                  href={sourceURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  原始碼
+                </a>
+              ) : (
+                ""
+              )}
             </nav>
           </section>
         </main>
