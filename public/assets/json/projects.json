@@ -35,7 +35,7 @@
       "URL": "/assets/images/project4.png",
       "alt": "e-commerce admin"
     },
-    "techs": ["JavaScript", "Bootstrap"],
+    "techs": ["JavaScript", "Bootstrap", "Node.js", "express"],
     "projectURL": "https://cryptic-ridge-70965.herokuapp.com",
     "sourceURL": "https://github.com/chentselee/e-commerce-admin"
   },
@@ -48,5 +48,20 @@
     "techs": ["React", "TypeScript", "Next.js", "styled-jsx"],
     "projectURL": "https://chentselee.netlify.app/",
     "sourceURL": "https://github.com/chentselee/chentselee.com"
+  },
+  {
+    "title": "線上聊天室前端",
+    "image": {
+      "URL": "/assets/images/project6.png",
+      "alt": "Simple chat app"
+    },
+    "techs": ["Vue", "Vue-router", "Vuex", "socket.io"],
+    "projectURL": "https://simple-chat.netlify.app/",
+    "sourceURL": "https://github.com/chentselee/simple-chat"
+  },
+  {
+    "title": "線上聊天室後端",
+    "techs": ["Node.js", "express", "socket.io"],
+    "sourceURL": "https://github.com/chentselee/simple-chat-server"
   }
 ]
